@@ -12,6 +12,9 @@ export default async function handler(req, res) {
             quantity: 1,
           },
         ],
+        phone_number_collection: {
+          enabled: true,
+        },
         mode: 'payment',
         success_url: `${req.headers.origin}/?success=true`,
         cancel_url: `${req.headers.origin}/?canceled=true`,
